@@ -2,7 +2,7 @@ import React, { useState, useEffect} from 'react'
 import Image from "next/image"
 import Link from "next/link"
 
-//--------IMPORT ICON
+// --------IMPORT ICON
 import { MdNotifications } from 'react-icons/md'
 import { BsSearch } from "react-icons/bs"
 import { CgMenuLeft, CgMenuRight } from "react-icons/cg"
@@ -14,7 +14,7 @@ import { Button } from "../componentsIndex"
 import images from "../../img"
 
 const Navbar = () => {
-    //-----USESTATE COMPONENTS
+    // -----USESTATE COMPONENTS
     const [discover, setDiscover] = useState(false)
     const [help, setHelp] = useState(false)
     const [notification, setNotification] = useState(false)
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            // END OF LEFT SECTION
+            {/* // END OF LEFT SECTION */}
             <div className={Style.navbar_container_right}>
                 <div className={Style.navbar_container_right_discover}>
                     // DISCOVER MENU 
@@ -99,7 +99,7 @@ const Navbar = () => {
                     )}
                 </div>
 
-                // HELP CENTER MENU
+                {/* // HELP CENTER MENU */}
                 <div className={Style.navbar_container_right_help}>
                     <p onClick={(e)=> openMenu(e)}>Help Center</p>
                     {help && (
@@ -109,18 +109,18 @@ const Navbar = () => {
                     )}
                 </div>
 
-                // NOTIFICATION 
+                {/* //-------NOTIFICATION  */}
                 <div className={Style.navbar_container_right_notify}>
                     <MdNotifications className={Style.notify} onClick={() => openNotification()} />
                     {notification && <Notification />}
                 </div>
 
-                // CREATE BUTTON SECTION
+                {/* // CREATE BUTTON SECTION */}
                 <div className={Style.navbar_container_right_button}>
                     <Button btnText="Create"/>
                 </div>
 
-                // USER PROFILE
+                {/* // USER PROFILE */}
 
                 <div className={Style.navbar_container_right_profile_box}>
                     <div className={Style.navbar_container_right_profile}>
@@ -138,7 +138,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                // MENU BUTTON
+                {/* // MENU BUTTON */}
                 <div className={Style.navbar_container_right_menuBtn}>
                     <CgMenuRight
                         className={Style.menuIcon}
@@ -148,7 +148,7 @@ const Navbar = () => {
             </div>
         </div>
 
-        // SIDEBAR COMPONENTS
+        {/* // SIDEBAR COMPONENTS */}
         {
             openSideMenu && (
                 <div className={Style.SideBar}>
