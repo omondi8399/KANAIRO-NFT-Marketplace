@@ -93,7 +93,7 @@ const Navbar = () => {
                     // DISCOVER MENU 
                     <p onClick={(e)=> openMenu(e)}>Discover</p>
                     {discover && (
-                        <div className={Styles.navbar_container_right_discover_box}>
+                        <div className={Style.navbar_container_right_discover_box}>
                         <Discover />
                     </div>
                     )}
@@ -103,7 +103,7 @@ const Navbar = () => {
                 <div className={Style.navbar_container_right_help}>
                     <p onClick={(e)=> openMenu(e)}>Help Center</p>
                     {help && (
-                        <div className={Styles.navbar_container_right_help_box}>
+                        <div className={Style.navbar_container_right_help_box}>
                             <HelpCenter />
                         </div>
                     )}
@@ -123,7 +123,7 @@ const Navbar = () => {
                 // USER PROFILE
 
                 <div className={Style.navbar_container_right_profile_box}>
-                    <div className={Styles.navbar_container_right_profile}>
+                    <div className={Style.navbar_container_right_profile}>
                         <Image 
                             src={images.user1} 
                             alt="Profile"
