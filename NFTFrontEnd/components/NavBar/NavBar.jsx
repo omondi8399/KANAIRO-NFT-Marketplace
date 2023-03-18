@@ -93,6 +93,30 @@ const Navbar = () => {
                 // NOTIFICATION 
                 <div className={Styles.navbar_container_right_notify}>
                     <MdNotifications className={Style.notify} onClick={() => openNotification()} />
+                    {notification && <Notification />}
+                </div>
+
+                // CREATE BUTTON SECTION
+                <div className={Styles.navbar_container_right_button}>
+                    <Button btnText="Create"/>
+                </div>
+
+                // USER PROFILE
+
+                <div className={Styles.navbar_container_right_profile_box}>
+                    <div className={Styles.navbar_container_right_profile}>
+                        <Image 
+                            src={images.user1} 
+                            alt="Profile"
+                            width={40}
+                            height={40}
+                            onClick={()=> 
+                            openProfile()}
+                            className={Style.navbar_container_right_profile}
+                        />
+                    
+                    {profile && <profile />}
+                    </div>
                 </div>
             </div>
         </div>
