@@ -20,6 +20,28 @@ const Navbar = () => {
     const [notification, setNotification] = useState(false)
     const [profile, setProfile] = useState(false)
     const [openSideMenu, setOpenSideMenu] = useState(false)
+
+    const openMenu = (e)=> {
+        const btnText = e.target.innerText
+        if(btnText == "Discover") {
+            setDiscover(true)
+            setHelp(false)
+            setNotification(false)
+            setProfile(false)
+        } else if (btnText == "Help Center") {
+            setDiscover(false)
+            setHelp(true)
+            setNotification(false)
+            setProfile(false)
+        } else {
+            setDiscover(false)
+            setHelp(false)
+            setNotification(false)
+            setProfile(false)
+        }
+
+    }
+
   return (
     <div className={Styles.navbar}>
         <div className={Styles.navbar_container}>
@@ -28,11 +50,26 @@ const Navbar = () => {
                     <Image src={images.logo} alt="NFT MARKET PLACE" width={100} height={100} />
                 </div>
                 <div className={Styles.navbar_container_left_box_input}>
-                    <div className={Styles.navbar_container_left_box_input_box}></div>
+                    <div className={Styles.navbar_container_left_box_input_box}>
+                        <input type='text' placeholder='Search NFT'/>
+                        <BsSearch onClick={() => {}} className={Style.search_con} />
+                    </div>
                 </div>
             </div>
-            <div className={Styles.navbar_container_right}>
 
+            // END OF LEFT SECTION
+            <div className={Styles.navbar_container_right}>
+                <div className={Styles.navbar_container_right_discover}>
+                    // DISCOVER MENU 
+                    <p onClick={(e)=> openMenu(e)}>Discover</p>
+                    {discover && (
+                        <div className={Styles.navbar_container_right_discover_box}>
+                        <Discover />
+                    </div>
+                    )}
+                </div>
+
+                // HELP CENTER MENU
             </div>
         </div>
     </div>
