@@ -42,6 +42,17 @@ const Navbar = () => {
 
     }
 
+    const openNotification = ()=>{
+        if(!notification){
+            setNotification(true)
+            setDiscover(false)
+            setHelp(false)
+            setProfile(false)
+        } else {
+            setNotification(false)
+        }
+    }
+
   return (
     <div className={Styles.navbar}>
         <div className={Styles.navbar_container}>
@@ -70,6 +81,19 @@ const Navbar = () => {
                 </div>
 
                 // HELP CENTER MENU
+                <div className={Styles.navbar_container_right_help}>
+                    <p onClick={(e)=> openMenu(e)}>Help Center</p>
+                    {help && (
+                        <div className={Styles.navbar_container_right_help_box}>
+                            <HelpCenter />
+                        </div>
+                    )}
+                </div>
+
+                // NOTIFICATION 
+                <div className={Styles.navbar_container_right_notify}>
+                    <MdNotifications className={Style.notify} onClick={() => openNotification()} />
+                </div>
             </div>
         </div>
     </div>
