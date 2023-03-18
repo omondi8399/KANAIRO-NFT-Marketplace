@@ -73,14 +73,14 @@ const Navbar = () => {
     }
 
   return (
-    <div className={Styles.navbar}>
-        <div className={Styles.navbar_container}>
-            <div className={Styles.navbar_container_left}>
-                <div className={Styles.logo}>
+    <div className={Style.navbar}>
+        <div className={Style.navbar_container}>
+            <div className={Style.navbar_container_left}>
+                <div className={Style.logo}>
                     <Image src={images.logo} alt="NFT MARKET PLACE" width={100} height={100} />
                 </div>
-                <div className={Styles.navbar_container_left_box_input}>
-                    <div className={Styles.navbar_container_left_box_input_box}>
+                <div className={Style.navbar_container_left_box_input}>
+                    <div className={Style.navbar_container_left_box_input_box}>
                         <input type='text' placeholder='Search NFT'/>
                         <BsSearch onClick={() => {}} className={Style.search_con} />
                     </div>
@@ -88,8 +88,8 @@ const Navbar = () => {
             </div>
 
             // END OF LEFT SECTION
-            <div className={Styles.navbar_container_right}>
-                <div className={Styles.navbar_container_right_discover}>
+            <div className={Style.navbar_container_right}>
+                <div className={Style.navbar_container_right_discover}>
                     // DISCOVER MENU 
                     <p onClick={(e)=> openMenu(e)}>Discover</p>
                     {discover && (
@@ -100,7 +100,7 @@ const Navbar = () => {
                 </div>
 
                 // HELP CENTER MENU
-                <div className={Styles.navbar_container_right_help}>
+                <div className={Style.navbar_container_right_help}>
                     <p onClick={(e)=> openMenu(e)}>Help Center</p>
                     {help && (
                         <div className={Styles.navbar_container_right_help_box}>
@@ -110,19 +110,19 @@ const Navbar = () => {
                 </div>
 
                 // NOTIFICATION 
-                <div className={Styles.navbar_container_right_notify}>
+                <div className={Style.navbar_container_right_notify}>
                     <MdNotifications className={Style.notify} onClick={() => openNotification()} />
                     {notification && <Notification />}
                 </div>
 
                 // CREATE BUTTON SECTION
-                <div className={Styles.navbar_container_right_button}>
+                <div className={Style.navbar_container_right_button}>
                     <Button btnText="Create"/>
                 </div>
 
                 // USER PROFILE
 
-                <div className={Styles.navbar_container_right_profile_box}>
+                <div className={Style.navbar_container_right_profile_box}>
                     <div className={Styles.navbar_container_right_profile}>
                         <Image 
                             src={images.user1} 
