@@ -53,6 +53,25 @@ const Navbar = () => {
         }
     }
 
+    const openProfile = ()=> {
+        if(!profile){
+            setProfile(true)
+            setHelp(false)
+            setDiscover(false)
+            setNotification(false)
+        } else {
+            setProfile(false)
+        }
+    }
+
+    const openSideBar = () => {
+        if (!openSideMenu) {
+            setOpenSideMenu(true)
+        } else {
+            setOpenSideMenu(false)
+        }
+    }
+
   return (
     <div className={Styles.navbar}>
         <div className={Styles.navbar_container}>
@@ -118,10 +137,26 @@ const Navbar = () => {
                     {profile && <profile />}
                     </div>
                 </div>
+
+                // MENU BUTTON
+                <div className={Style.navbar_container_right_menuBtn}>
+                    <CgMenuRight
+                        className={Style.menuIcon}
+                        onClick={() => openSideBar()}
+                    />
+                </div>
             </div>
         </div>
+
+        // SIDEBAR COMPONENTS
+        {
+            openSideMenu && (
+                <div className={Style.SideBar}>
+                    <Sidebar setOpenSideMenu={setOpenSideMenu} />
+                </div>
+            )}
     </div>
-  )
+    )
 }
 
 export default Navbar
