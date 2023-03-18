@@ -1,5 +1,4 @@
 import "../styles/globals.css";
-
 // INTERNAL IMPORT
 import Navbar from "../components/NavBar/Navbar";
 
