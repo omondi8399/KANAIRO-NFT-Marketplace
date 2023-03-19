@@ -18,7 +18,7 @@ import Style from "./Sidebar.module.css"
 import images from "../../../img"
 import Button from "../../Button/Button"
 
-const Sidebar = () => {
+const Sidebar = ({ setOpenSideMenu }) => {
   //-------USESTATE
   const [openDiscover,setOpenDiscover] = useState(false)
   const [openHelp, setOpenHelp] = useState(false)
@@ -80,6 +80,18 @@ const Sidebar = () => {
     },
   ]
 
+  const openDiscoverMenu = ()=> {
+    if(!openDiscover) {
+      setOpenDiscover(true)
+    } else {
+      setOpenDiscover(false)
+    }
+  }
+
+  const openHelpMenu = () => {
+    
+  }
+
   return (
     <div className={Style.sidebar}>
       <GrClose className={Style.sidebar_closeBtn} onClick={()=> closeSidebar()} />
@@ -130,9 +142,23 @@ const Sidebar = () => {
           </div>
 
           {
+            openHelp && (
+              <div className={Style.sidebar_discover}>
+                {helpCenter.map((el, i)=> (
+                  <p key={i + 1}>
+                    <Link href={{ pathname: `${el.link}` }}>{el.name}</Link>
+                  </p>
+                ))}
+              </div>
+            )
 
           }
         </div>
+      </div>
+
+      <div className={Style.sidebar_button}>
+        <Button btnName="Create" />
+        <Button btnName="Connect Wallet" />
       </div>
     </div>
   )
