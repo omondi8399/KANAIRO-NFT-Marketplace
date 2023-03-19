@@ -8,7 +8,7 @@ import images from "../../../img"
 const Notification = () => {
   return (
     <div className={Style.notification}>
-      <P>Notification</P>
+      <p>Notification</p>
       <div className={Style.notification_box}>
         <div className={Style.notification_box_img}>
           <Image src={images.user1} alt="profile image" width={50} height={50} className={Style.notification_box_img} />

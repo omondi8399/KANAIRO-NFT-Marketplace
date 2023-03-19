@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { GrClose } from "react-icons/gr"
@@ -89,7 +89,15 @@ const Sidebar = ({ setOpenSideMenu }) => {
   }
 
   const openHelpMenu = () => {
-    
+    if(!openHelp) {
+      setOpenHelp(true)
+    } else {
+      setOpenHelp(false)
+    }
+  }
+
+  const closeSidebar = () => {
+    setOpenSideMenu(false)
   }
 
   return (
@@ -111,6 +119,9 @@ const Sidebar = ({ setOpenSideMenu }) => {
           </a>
           <a href='#'>
             <TiSocialInstagram />
+          </a>
+          <a href='#'>
+            <TiSocialYoutube />
           </a>
         </div>
       </div>
