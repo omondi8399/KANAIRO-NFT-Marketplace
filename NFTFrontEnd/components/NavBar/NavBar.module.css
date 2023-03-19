@@ -128,4 +128,36 @@
     .navbar_container{
         grid-template-columns: 1fr 1fr;
     }
+
+    .navbar_container_left{
+        grid-template-columns: 1fr;
+    }
+
+    .navbar_container_right{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .navbar_container_right_menuBtn{
+        display: block;
+    }
+
+    .navbar_container_left_box_input_box{
+        display: none;
+    }
+
+    .navbar_container_right_discover{
+        display: none;
+    }
+
+    .navbar_container_right_help{
+        display: none;
+    }
+
+    .navbar_container_right_button{
+        display: none;
+    }
+
+    .sideBar{
+        display: block;
+    }
 }
