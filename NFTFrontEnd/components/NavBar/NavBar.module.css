@@ -49,7 +49,7 @@
     grid-template-columns: 1fr 1fr .5fr 1fr .3fr;
     gap: 1rem;
     align-items: center;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
 
 .navbar_container_right_discover{

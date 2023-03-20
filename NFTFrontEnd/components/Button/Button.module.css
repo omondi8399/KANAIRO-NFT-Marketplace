@@ -1,0 +1,18 @@
+
+.button{
+    background-color: var(--icons-color);
+    padding: 1rem 2rem;
+    border: 1px solid var(--icons-color);
+    border-radius: 2rem;
+    font-size: 1.1rem;
+    color: var(--shadow-light-color);
+    cursor: pointer;
+    transition: all .2s ease-in;
+    box-shadow: var(--box-shadow);
+}
+
+.button:hover{
+    background-color: var(--main-bg-color);
+    border: 1px solid var(--icons-color);
+    color: var(--icons-color);
+}
