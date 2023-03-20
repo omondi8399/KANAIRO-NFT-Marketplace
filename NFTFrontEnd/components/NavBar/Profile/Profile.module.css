@@ -9,26 +9,26 @@
 
     left: -17rem;
     top: 4.5rem;
-    z-index: 2222222222;
-    background-color: var(--main-bg-col);
+    z-index: 22222222222;
+    background-color: var(--main-bg-color);
 }
 
-.profile-account{
+.profile_account{
     display: flex;
     align-items: flex-start;
     gap: 2rem;
     padding: 1.5rem;
 }
 
-.profile-account_img{
+.profile_account_img{
     border-radius: 50%;
 }
 
-.profile-account_info{
+.profile_account_info{
     line-height: 0.3;
 }
 
-.profile-account_info p{
+.profile_account_info p{
     font-weight: 600;
 }
 
@@ -37,11 +37,11 @@
     align-items: center;
     gap: 2rem;
     padding: 0rem 1.5rem;
-    transition: all .3s ease-in;
+    transition:  all .3s ease-in;
 }
 
 .profile_menu_one_item:hover{
-    background-color: var(--icon-color);
+    background-color: var(--icons-color);
     color: var(--shadow-dark-color);
     border-radius: .3rem;
 }
