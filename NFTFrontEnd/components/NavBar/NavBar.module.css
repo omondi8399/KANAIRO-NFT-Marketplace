@@ -1,3 +1,4 @@
+
 .navbar{
     width: 100%;
     padding-block: 1.5rem;
@@ -7,8 +8,9 @@
 
 .navbar_container{
     width: 80%;
-    margin: 0 auto;
-    display: grid;
+    margin:  0 auto;
+
+    display:  grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-between;
@@ -18,7 +20,7 @@
 .navbar_container_left{
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: center;
+    align-items:  center;
 }
 
 .navbar_container_left_box_input_box{
@@ -34,7 +36,7 @@
     width: 90%;
     border: none;
     outline: none;
-    background-color: transparent;
+    background-color:  transparent;
 }
 
 .search_icon{
@@ -42,7 +44,7 @@
     font-size: 1.4rem;
 }
 
-/* ------------RIGHT SECTION */
+/* //-------RIGHT */
 
 .navbar_container_right{
     display: grid;
@@ -56,7 +58,6 @@
     position: relative;
     cursor: pointer;
 }
-
 .navbar_container_right_help{
     position: relative;
     cursor: pointer;
@@ -105,7 +106,7 @@
     cursor: pointer;
 }
 
-/* ------SIDEBAR */
+/* /////------SIDEBAR */
 
 .sideBar{
     position: fixed;
@@ -123,8 +124,7 @@
     display: none;
 }
 
-@media screen and (min-device-width: 320px) and 
-(max-device-width: 768px){
+@media screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .navbar_container{
         grid-template-columns: 1fr 1fr;
     }
@@ -144,7 +144,6 @@
     .navbar_container_left_box_input_box{
         display: none;
     }
-
     .navbar_container_right_discover{
         display: none;
     }
