@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-//INTERNAL IMPORT 
-import Style from "./Button.module.css"
+//INTERNAL IMPORT
+import Style from "./Button.module.css";
 
 const Button = ({ btnName, handleClick }) => {
   return (
@@ -10,7 +10,7 @@ const Button = ({ btnName, handleClick }) => {
         {btnName}
       </button>
     </div>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
