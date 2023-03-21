@@ -52,7 +52,7 @@ const NavBar = () => {
   };
 
   const openProfile = () => {
-    if (!profile) {
+    if (profile) {
       setProfile(true);
       setHelp(false);
       setDiscover(false);
