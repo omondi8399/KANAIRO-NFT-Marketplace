@@ -14,7 +14,7 @@ import images from "../../img";
 
 const NavBar = () => {
   //----USESTATE COMPONNTS
-  // const [discover, setDiscover] = useState(false);
+  const [discover, setDiscover] = useState(false);
   const [help, setHelp] = useState(false);
   const [notification, setNotification] = useState(false);
   const [profile, setProfile] = useState(false);
