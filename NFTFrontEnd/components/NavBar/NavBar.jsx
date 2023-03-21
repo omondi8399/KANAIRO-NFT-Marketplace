@@ -17,8 +17,8 @@ const NavBar = () => {
   const [discover, setDiscover] = useState(false);
   const [help, setHelp] = useState(false);
   const [notification, setNotification] = useState(false);
-  const [profile, setProfile] = useState(false);
-  const [openSideMenu, setOpenSideMenu] = useState(false);
+  // const [profile, setProfile] = useState(false);
+  // const [openSideMenu, setOpenSideMenu] = useState(false);
 
   const openMenu = (e) => {
     const btnText = e.target.innerText;
