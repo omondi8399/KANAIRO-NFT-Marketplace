@@ -22,7 +22,7 @@ const Profile = () => {
         />
 
         <div className={Style.profile_account_info}>
-          <p>Shoaib Bhai</p>
+          <p>Rodgers Omondi </p>
           <small>X038499382920203...</small>
         </div>
       </div>
@@ -32,7 +32,7 @@ const Profile = () => {
           <div className={Style.profile_menu_one_item}>
             <FaUserAlt />
             <p>
-              <Link href={{ pathname: "/myprofile" }}>My Profile</Link>
+              <Link href={{ pathname: "/my-profile" }}>My Profile</Link>
             </p>
           </div>
           <div className={Style.profile_menu_one_item}>
@@ -59,7 +59,7 @@ const Profile = () => {
           <div className={Style.profile_menu_one_item}>
             <TbDownload />
             <p>
-              <Link href={{ pathname: "/disconnet" }}>Disconnet</Link>
+              <Link href={{ pathname: "/disconnect" }}>Disconnect</Link>
             </p>
           </div>
         </div>
