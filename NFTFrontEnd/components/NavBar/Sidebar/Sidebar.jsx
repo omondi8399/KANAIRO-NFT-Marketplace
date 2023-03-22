@@ -13,7 +13,7 @@ import {
 } from "react-icons/ti";
 
 //INTERNAL IMPORT
-import Style from "./Sidebar.module.css";
+import Style from "./SideBar.module.css";
 import images from "../../../img";
 import Button from "../../Button/Button";
 
@@ -53,7 +53,7 @@ const SideBar = ({ setOpenSideMenu }) => {
       link: "blog",
     },
   ];
-  //------HELP CENTRE
+  //------HELP CENTER
   const helpCenter = [
     {
       name: "About",
@@ -108,7 +108,7 @@ const SideBar = ({ setOpenSideMenu }) => {
         <Image src={images.logo} alt="logo" width={150} height={150} />
         <p>
           Discover the most outstanding articles on all topics of NFT & write
-          your own stories and share them.
+          your own stories and share them
         </p>
         <div className={Style.sideBar_social}>
           <a href="#">
