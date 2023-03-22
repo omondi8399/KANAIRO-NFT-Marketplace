@@ -1,12 +1,13 @@
 import "../styles/globals.css";
 
-// INTERNAL IMPORT
-import Navbar from "../components/NavBar/Navbar";
+//INTERNAL IMPORT
+import { NavBar, Footer } from "../components/componentsIndex";
 
 const MyApp = ({ Component, pageProps }) => (
   <div>
-    <Navbar />
+    <NavBar />
     <Component {...pageProps} />
+    <Footer />
   </div>
 );
 
