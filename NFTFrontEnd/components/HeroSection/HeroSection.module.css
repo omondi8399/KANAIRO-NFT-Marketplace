@@ -1,0 +1,46 @@
+
+.heroSection{
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.heroSection_box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.heroSection_box_left{
+    padding-right: 6rem;
+}
+
+.heroSection_box_left h1{
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.heroSection_box_left p{
+    margin-bottom:  2rem;
+}
+
+@media screen and (max-width: 35em) {
+    .heroSection{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 55em) {
+    .heroSection_box{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .heroSection_box_left{
+        padding-right: 2rem;
+    }
+
+    .heroSection_box_left h1{
+        line-height: 1;
+        font-size: 3rem;
+    }
+}
