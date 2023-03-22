@@ -90,7 +90,24 @@ const BigNFTSlider = () => {
                     src={sliderData[idNumber].image} 
                     alt="profile image" 
                     width={50} 
-                    height={50} />
+                    height={50} 
+                    />
+                <div className={Style.bigNFTSlider_box_left_creator_profile_img}>
+                    <p>Creator</p>
+                    <h4>{sliderData[idNumber].name} 
+                    <span>
+                        <MdVerified />
+                    </span>
+                    </h4>
+                </div>
+                </div>
+                <div className={Style.bigNFTSlider_box_left_creator_collection}>
+                    <AiFillFire className={Style.bigNFTSlider_box_left_creator_collection_icon} />
+
+                    <div className={Style.bigNFTSlider_box_left_creator_collection_info}>
+                        <p>Collection</p>
+                        <h4>{sliderData[idNumber].collection}</h4>
+                    </div>
                 </div>
             </div>
         </div>
