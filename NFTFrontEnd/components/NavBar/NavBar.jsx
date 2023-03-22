@@ -9,11 +9,11 @@ import { CgMenuLeft, CgMenuRight } from "react-icons/cg";
 //INTERNAL IMPORT
 import Style from "./NavBar.module.css";
 import { Discover, HelpCenter, Notification, Profile, SideBar } from "./index";
-import { Button } from "../componentsindex";
+import { Button } from "../componentsIndex";
 import images from "../../img";
 
 const NavBar = () => {
-  //----USESTATE COMPONNTS
+  //----USESTATE COMPONENTS
   const [discover, setDiscover] = useState(false);
   const [help, setHelp] = useState(false);
   const [notification, setNotification] = useState(false);
@@ -154,7 +154,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDBAR CPMPONE/NT */}
+      {/* SIDEBAR COMPONENT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu} />
