@@ -110,6 +110,22 @@ const BigNFTSlider = () => {
                     </div>
                 </div>
             </div>
+
+            <div className={Style.bigNFTSlider_box_left_bidding}>
+                <div className={Style.bigNFTSlider_box_left_bidding_box}>
+                    <small>Current Bid</small>
+                    <p>{sliderData[idNumber].price} <span>$221.21</span></p>
+                </div>
+
+                <p className={Style.bigNFTSlider_box_left_bidding_box_auction}>
+                    <MdTimer className={Style.bigNFTSlider_box_left_bidding_box_icon} />
+                    <span>Auction ending</span>
+                </p>
+
+                <div className={Style.bigNFTSlider_box_left_bidding_box_timer_item}>
+                    
+                </div>
+            </div>
         </div>
       </div>
     </div>
