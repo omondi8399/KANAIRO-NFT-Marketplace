@@ -1,0 +1,25 @@
+
+.service{
+    width: 80%;
+    margin: 3rem auto;
+    margin-block: 8rem;
+}
+
+.service_box{
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 3rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 35em) {
+    .service{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    .service_box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
