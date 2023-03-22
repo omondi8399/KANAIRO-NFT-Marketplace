@@ -65,6 +65,7 @@ const Footer = () => {
             <RiSendPlaneFill className={Style.subscribe_box_send} />
           </div>
           <div className={Style.subscribe_box_info}>
+            <h2>KANAIRO MARKETPLACE</h2>
             <p>
               Discover, collect, and sell extraordinary NFTs OpenSea is the
               world first and largest NFT marketplace
