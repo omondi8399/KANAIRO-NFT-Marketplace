@@ -13,7 +13,7 @@ import { Button } from "../componentsIndex";
 import images from "../../img";
 
 const NavBar = () => {
-  //----USESTATE COMPONNTS
+  //----USESTATE COMPONENTS
   const [discover, setDiscover] = useState(false);
   const [help, setHelp] = useState(false);
   const [notification, setNotification] = useState(false);
@@ -154,7 +154,7 @@ const NavBar = () => {
         </div>
       </div>
 
-      {/* SIDBAR CPMPONE/NT */}
+      {/* SIDEBAR CPMPONE/NT */}
       {openSideMenu && (
         <div className={Style.sideBar}>
           <SideBar setOpenSideMenu={setOpenSideMenu} />
