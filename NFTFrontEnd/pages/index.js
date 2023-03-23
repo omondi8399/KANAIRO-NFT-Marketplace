@@ -10,8 +10,8 @@ const Home = () => {
       <HeroSection />
       <Service />
       <BigNFTSlider />
-      <Subscribe />
       <Title heading="Browse by category" paragraph="Explore the NFTs in the most featured categories." />
+      <Subscribe />
     </div>
   );
 };
