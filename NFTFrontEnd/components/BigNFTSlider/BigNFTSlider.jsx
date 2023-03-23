@@ -123,8 +123,29 @@ const BigNFTSlider = () => {
                 </p>
 
                 <div className={Style.bigNFTSlider_box_left_bidding_box_timer_item}>
-                    
+                    <p>sliderData[idNumber].time.days</p>
+                    <span>Days</span>
                 </div>
+
+                <div className={Style.bigNFTSlider_box_left_bidding_box_timer_item}>
+                    <p>sliderData[idNumber].time.hours</p>
+                    <span>Hours</span>
+                </div>
+
+                <div className={Style.bigNFTSlider_box_left_bidding_box_timer_item}>
+                    <p>sliderData[idNumber].time.minutes</p>
+                    <span>Mins</span>
+                </div>
+
+                <div className={Style.bigNFTSlider_box_left_bidding_box_timer_item}>
+                    <p>sliderData[idNumber].time.seconds</p>
+                    <span>Secs</span>
+                </div> 
+            </div>
+
+            <div className={Style.bigNFTSlider_box_left-button}>
+                <Button btnName="Place" handleClick={() => {}} />
+                <Button btnName="View" handleClick={() => {}} />
             </div>
         </div>
       </div>
