@@ -1,0 +1,11 @@
+
+.bigNFTSlider_box{
+    margin: 0 auto;
+    width: 80%;
+    padding-block: 8rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items:center;
+}
+
+@media

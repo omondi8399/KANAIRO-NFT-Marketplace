@@ -79,6 +79,21 @@ const BigNFTSlider = () => {
             },
         }
     ]
+
+     //-------INC
+  const inc = useCallback(() => {
+    if (idNumber + 1 < sliderData.length) {
+      setIdNumber(idNumber + 1);
+    }
+  }, [idNumber, sliderData.length]);
+
+  //-------DEC
+  const dec = useCallback(() => {
+    if (idNumber > 0) {
+      setIdNumber(idNumber - 1);
+    }
+  }, [idNumber]);
+
   
     return (
         <div className={Style.bigNFTSlider}>
