@@ -63,6 +63,15 @@
     width: 90%;
 }
 
+.subscribe_box_left_input::placeholder{
+    color: var(--main-bg-color);
+    font-size: 1.2rem;
+}
+
+.subscribe_box_left_input_icon{
+    font-size: 2rem;
+}
+
 @media screen and (min-device-width: 320px) and (max-device-width: 768px){
     .subscribe_box{
         width: 90%;
