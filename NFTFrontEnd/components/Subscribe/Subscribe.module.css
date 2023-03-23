@@ -78,6 +78,13 @@
         grid-template-columns: 1fr;
         gap: 4rem;
     }
+    .subscribe_box_left_input{
+        width: 100%;
+        padding: 1rem;
+    }
+    .subscribe_box_left h2{
+        font-size: 2rem;
+    }
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px){
@@ -85,5 +92,12 @@
         width: 90%;
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
+    }
+    .subscribe_box_left_input{
+        width: 100%;
+        padding: 1rem;
+    }
+    .subscribe_box_left h2{
+        font-size: 2rem;
     }
 }
