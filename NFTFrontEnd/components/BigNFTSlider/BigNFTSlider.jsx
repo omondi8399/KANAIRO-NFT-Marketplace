@@ -1,19 +1,20 @@
-import React, {useState, useEffect, useCallback } from 'react'
-import Image from 'next/image'
-import { AiFillFire, AiFillHeart, AiOutlineHeart } from "react-icons/ai"
-import { MdVerified, MdTimer } from "react-icons/md"
-import { TbArrowBigLeftLines, TbArrowBigRightLine } from "react-icons/tb"
 
 
-//INTERNAL IMPORT 
-import Style from "./BigNFTSlider.module.css"
-import images from "../../img"
-import Button from "../Button/Button"
-
-const BigNFTSlider = () => {
-    const [idNumber, setIdNumber] = useState(1)
-
-    const sliderData = [
+    import React, { useState, useEffect, useCallback } from "react";
+    import Image from "next/image";
+    import { AiFillFire, AiFillHeart, AiOutlineHeart } from "react-icons/ai";
+    import { MdVerified, MdTimer } from "react-icons/md";
+    import { TbArrowBigLeftLines, TbArrowBigRightLine } from "react-icons/tb";
+    
+    //INTERNAL IMPORT
+    import Style from "./BigNFTSlider.module.css";
+    import images from "../../img";
+    import Button from "../Button/Button";
+    
+    const BigNFTSlider = () => {
+      const [idNumber, setIdNumber] = useState(0);
+    
+       const sliderData = [
         {
             title: "Flash NFT",
             id: 1,
@@ -66,36 +67,35 @@ const BigNFTSlider = () => {
             title: "Savitar NFT",
             id: 4,
             name: "Barry Allan",
-            collection: "Speedforce",
+            collection: "NegativeForce",
             price: " 0000093967 ETH",
             like: 846,
             image: images.user4,
-            nftImage: images.nft_image_4,
+            nftImage: images.nft_1,
             time: {
                 days: 3,
                 hours: 13,
                 minutes: 26,
                 seconds: 55,
             },
-        }
+        },
     ]
-
-     //-------INC
-  const inc = useCallback(() => {
-    if (idNumber + 1 < sliderData.length) {
-      setIdNumber(idNumber + 1);
-    }
-  }, [idNumber, sliderData.length]);
-
-  //-------DEC
-  const dec = useCallback(() => {
-    if (idNumber > 0) {
-      setIdNumber(idNumber - 1);
-    }
-  }, [idNumber]);
-
-  
-    return (
+    
+      //-------INC
+      const inc = useCallback(() => {
+        if (idNumber + 1 < sliderData.length) {
+          setIdNumber(idNumber + 1);
+        }
+      }, [idNumber, sliderData.length]);
+    
+      //-------DEC
+      const dec = useCallback(() => {
+        if (idNumber > 0) {
+          setIdNumber(idNumber - 1);
+        }
+      }, [idNumber]);
+    
+      return (
         <div className={Style.bigNFTSlider}>
           <div className={Style.bigNFTSlider_box}>
             <div className={Style.bigNFTSlider_box_left}>
@@ -215,5 +215,5 @@ const BigNFTSlider = () => {
         </div>
       );
     };
-
-export default BigNFTSlider
+    
+    export default BigNFTSlider;
