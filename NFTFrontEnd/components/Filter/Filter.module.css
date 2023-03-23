@@ -27,4 +27,38 @@
     border: 1px solid var(--main-bg-color);
     transition: all .3s ease-in;
     font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.filter_box_right_box{
+    border: 1px solid var(--icon-color);
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: var(--main-bg-color);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter_box_left button:hover{
+    border: 1px solid var(--icon-color);
+    color: var(icon);
+}
+
+@media screen and (min-device-width: 320px)  and (max-device-width: 375px){
+    .filter_box{
+        display: grid;
+        gap: 4rem;
+    }
+    .filter_box_left{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .filter_box_left button{
+        padding: .2rem;
+    }
 }
