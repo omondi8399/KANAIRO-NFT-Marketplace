@@ -36,7 +36,7 @@ const Filter = () => {
         <div className={Style.filter_box_right}>
           <div className={Style.filter_box_right_box} onClick={() => openFilter()}>
             <FaFilter/>
-            <span>Filter</span> {filter ? <FaAngleDown /> : <FaAngleUp}
+            <span>Filter</span> {filter ? <FaAngleDown /> : <FaAngleUp />}
           </div>
         </div>
       </div>
@@ -51,7 +51,32 @@ const Filter = () => {
               </div>
             </div>
 
-            <div className={Style}
+            <div className={Style.filter_box_items_box}>
+              <div className={Style.filter_box_items_box_item_trans} onClick={()=> openImage()}>
+                {image ? <AiFillCloseCircle /> : <TiTick />}
+              </div>
+            </div>
+
+            <div className={Style.filter_box_items_box}>
+              <div className={Style.filter_box_items_box_item_trans} onClick={()=> openVideo()}>
+                  <FaVideo/> <small>Videos</small>
+                  {video ? <AiFillCloseCircle /> : <TiTick />}
+              </div>
+            </div>
+
+            <div className={Style.filter_box_items_box}>
+              <div className={Style.filter_box_items_box_item_trans} onClick={()=> openMusic()}>
+                  <FaMusic/> <small>Music</small>
+                  {music ? <AiFillCloseCircle /> : <TiTick />}
+              </div>
+            </div>
+
+            <div className={Style.filter_box_items_box}>
+              <div className={Style.filter_box_items_box_item}>
+                <FaUserAlt /> <span>Verified</span>
+                <MdVerified />
+              </div>
+            </div>
           </div>
         )
       }
