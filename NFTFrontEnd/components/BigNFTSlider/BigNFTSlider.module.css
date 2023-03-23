@@ -86,6 +86,66 @@
     gap: 1rem;
 }
 
+.bigNFTSlider_box_left_bidding_box small{
+    background-color: var(--shadow-dark-color);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-weight: 600;
+}
+
+.bigNFTSlider_box_left_bidding_box_icon{
+    font-size: 2rem;
+}
+
+.bigNFTSlider_box_left_bidding_box_timer{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+    padding: 1rem 0rem 3rem 0;
+    border-bottom: 1px solid var(--shadow-dark-color);
+}
+
+.bigNFTSlider_box_left_bidding_box_timer_item p{
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 0;
+}
+
+.bigNFTSlider_box_left_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding-block: 2rem 0rem;
+}
+
+.bigNFTSlider_box_left_sliderBtn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+
+.bigNFTSlider_box_left_sliderBtn_icon{
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.bigNFTSlider_box_left_sliderBtn_icon:hover{
+    background-color: var(--shadow-dark-color);
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+/*---------RIGHT SECTION */
+
+
+
+
+
+
 @media screen and (max-width: 65em) {
     .bigNFTSlider_box{
         width: 90%;
