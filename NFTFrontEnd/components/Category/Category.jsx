@@ -7,10 +7,10 @@ import Style from "./Category.module.css"
 import images from "../../img"
 
 const Category = () => {
-    const CategoryArray = [1, 2, 3, 4, 5]
+    const CategoryArray = [1, 2, 3, 4, 5, 6]
   return (
-  
-    <div className={Style.category}>
+      <div className={Style.box_category}>
+        <div className={Style.category}>
       {CategoryArray.map((el,i)=> (
         <div className={Style.category_box} key={i + 1}>
             <Image src={images.creatorbackground1} 
@@ -29,7 +29,9 @@ const Category = () => {
         </div>
       ))}
     </div>
-  )
+
+      </div>
+      )
 }
 
 export default Category
