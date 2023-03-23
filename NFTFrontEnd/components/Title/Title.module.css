@@ -1,0 +1,26 @@
+
+
+.title{
+    width: 100%;
+}
+
+.title_box{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title_box{
+    font-size: 3rem;
+    line-height: 0;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+    .title_box{
+        width: 90%;
+    }
+
+    .title_box h2{
+        font-size: 1.8rem;
+        line-height: 0;
+    }
+}
