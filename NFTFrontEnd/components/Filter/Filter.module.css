@@ -1,0 +1,30 @@
+
+.filter{
+    padding: 4rem 0;
+    width: 100%;
+}
+
+.filter_box{
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+
+.filter_box_left{
+    display: flex;
+    gap:2rem;
+}
+
+.filter_box_left button{
+    border: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: 1px solid var(--main-bg-color);
+    transition: all .3s ease-in;
+    font-size: 1.3rem;
+}

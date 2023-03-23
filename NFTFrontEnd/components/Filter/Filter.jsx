@@ -22,6 +22,40 @@ const Filter = () => {
     const [video, setVideo] = useState(true)
     const [music, setMusic] = useState(true)
 
+    //FUNCTION SECTION
+    const openFilter = () => {
+      if (!filter) {
+        setFilter(true)
+      } else {
+        setFilter(false)
+      }
+    }
+
+    const openImage = () => {
+      if(!image) {
+        setImage(true)
+      } else {
+        setImage(false)
+      }
+    }
+
+    const openVideo = ()=> {
+      if(!video) {
+        setVideo(true)
+      } else {
+        setVideo(false)
+      }
+    }
+
+    const openMusic = ()=> {
+      if (!music) {
+        setMusic(true)
+      } else {
+        setMusic(false)
+      } 
+    }
+    
+
   return (
     <div className={Style.filter}>
       <div className={Style.filter_box}>
