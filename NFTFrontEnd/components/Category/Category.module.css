@@ -1,0 +1,8 @@
+
+
+.category{
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+}
