@@ -34,7 +34,7 @@ const Subscribe = () => {
             </div>
         </div>
     </div>
-  )
+    )
 }
 
 export default Subscribe
