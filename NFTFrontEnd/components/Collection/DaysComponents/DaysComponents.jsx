@@ -37,7 +37,19 @@ const DaysComponents = () => {
         <div className={Style.daysComponent_box__title}>
           <h2>Amazing Collection</h2>
           <div className={Style.daysComponent_box_title_info}>
+            <div className={Style.daysComponent_box_title_info_profile}>
+              <Image src={images.user1} alt="profile" width={30} height={30}
+              objectFit="cover" className={Style.daysComponent_box__title_info_profile_img}
+              />
 
+              <p>Creator
+                <span> Rodgers<omondi><small><MdVerified/></small></omondi></span>
+              </p>
+            </div>
+
+            <div className={Style.daysComponent_box__title_info_profile}>
+              <small>1.255 ETH</small>
+            </div>
           </div>
         </div>
       </div>
