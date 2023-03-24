@@ -1,0 +1,55 @@
+
+.NFTCard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.NFTCard_box{
+    background-color: var(--shadow-light-color);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    cursor: pointer;
+    box-shadow: var(--box-shadow-color);
+}
+
+.NFTCard_box:hover .NFTCard_box_img_img{
+    transform: scale(1.05);
+    border-radius: 1rem;
+}
+
+.NFTCard_box_update{
+    grid-column: 1 /-1;
+    grid-row: 1 /-2;
+    z-index: 1111;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.NFTCard_box_update_left{
+    background-color: var(--icons-color);
+    padding: .5rem 1rem;
+    color: var(--main-bg-colo);
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+.NFTCard_box_update_left_like{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width:425px) {
+    .NFTCard{
+        grid-template-columns: 1fr;
+    }
+}

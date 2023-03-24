@@ -11,6 +11,14 @@ const NFTCard = () => {
     const featureArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
     const [like, setLike] = useState(true)
+
+    const likeNFT = () => {
+        if (!like) {
+            setLike(true)
+        }  else {
+            setLike(false)
+        }
+    }
   return (
     <div className={Style.NFTCard}>
         {featureArray.map((el, i)=>(
@@ -41,6 +49,28 @@ const NFTCard = () => {
                             <small>Remaining time</small>
                             <p>3h : 15m 20s</p>
                         </div>
+                    </div>
+                </div>
+
+                <div className={Style.NFTCard_box_update_details}>
+                    <div className={Style.NFTCard_box_update_details_price}>
+                        <div className={Style.NFTCard_box_update_details_price_box}>
+                            <h4>Clone #83989</h4>
+
+                            <div className={Style.NFTCard_box_update_details_price_box_box}>
+                                <div className={Style.NFTCard_box_update_details_price_box_bid}>
+                                    <small>Current Bid</small>
+                                    <p>1.000ETH</p>
+                                </div>
+                                <div className={Style.NFTCard_box_update_details_price_box_stock}>
+                                    <small>61 in stock</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className={Style.NFTCard_box_update_details_category}>
+                        <BsIMages />
                     </div>
                 </div>
             </div>
