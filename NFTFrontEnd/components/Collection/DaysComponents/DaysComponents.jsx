@@ -43,7 +43,10 @@ const DaysComponents = () => {
               />
 
               <p>Creator
-                <span> Rodgers<omondi><small><MdVerified/></small></omondi></span>
+                <span> 
+                  Rodgers Omondi
+                  <small><MdVerified/></small>
+                 </span>
               </p>
             </div>
 
