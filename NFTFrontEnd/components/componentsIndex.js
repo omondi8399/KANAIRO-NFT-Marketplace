@@ -11,6 +11,7 @@ import Filter from "./Filter/Filter";
 import NFTCard from "./NFTCard/NFTCard";
 import Collection from "./Collection/Collection";
 import FollowerTab from "./FollowerTab/FollowerTab";
+import AudioLive from "./AudioLive/AudioLive"
 
 export {
   Button,
@@ -25,5 +26,6 @@ export {
   Filter,
   NFTCard,
   Collection,
-  FollowerTab
+  FollowerTab,
+  AudioLive
 };
