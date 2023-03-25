@@ -39,7 +39,7 @@ const FollowerTab = () => {
     }
     return (
     <div className={Style.followerTab}>
-        <div className={Style.followerTab.title}>
+        <div className={Style.followerTab_title}>
             <h2> Top Creators List</h2>
             <div className={Style.followerTab_tabs}>
                 <div className={Style.followerTab_tab_btn}>
