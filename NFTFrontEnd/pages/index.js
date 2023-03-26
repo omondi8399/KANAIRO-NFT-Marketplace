@@ -13,7 +13,8 @@ import {
   NFTCard,
   Collection,
   FollowerTab,
-  AudioLive
+  AudioLive,
+  Slider
 } from "../components/componentsIndex";
 
 const Home = () => {
@@ -32,6 +33,11 @@ const Home = () => {
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <FollowerTab />
+      <Title
+        heading="Explore NFTs Video"
+        paragraph="Discover the most outstanding NFTs in all topics of life."
+      />
+      <Slider />
       <Collection />
       <Title
         heading="Featured NFTs"
