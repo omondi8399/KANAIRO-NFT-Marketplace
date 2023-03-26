@@ -12,6 +12,7 @@ const SliderCard = () => {
       <div className={Style.SliderCard}>
         <motion.div className={Style.slider}>
             <Image src={images.creatorbackground1}
+            className={Style.SliderCard_box_img_img}
             alt="slider profile"
             width={500}
             height={300}
