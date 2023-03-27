@@ -5,9 +5,35 @@ import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
 //INTERNAL IMPORT
 import Style from "./Slider.module.css";
 import SliderCard from "./SliderCard/SliderCard";
+import images from "../../img"
 
 const Slider = () => {
-  const sliderArray = [1, 2, 3, 4, 5, 6];
+  const FollowingArray = [
+    {
+      background: images.creatorbackground3,
+      user: images.user3
+    },
+    {
+      background: images.creatorbackground4,
+      user: images.user4
+    },
+    {
+      background: images.creatorbackground5,
+      user: images.user5
+    },
+    {
+      background: images.creatorbackground6,
+      user: images.user6
+    },
+    {
+      background: images.creatorbackground7,
+      user: images.user7
+    },
+    {
+      background: images.creatorbackground8,
+      user: images.user8
+    },
+  ];
   const [width, setWidth] = useState(0);
   const dragSlider = useRef();
 
@@ -55,7 +81,7 @@ const Slider = () => {
             drag="x"
             dragConstraints={{ right: 0, left: -width }}
           >
-            {sliderArray.map((el, i) => (
+            {FollowingArray.map((el, i) => (
               <SliderCard key={i + 1} el={el} i={i} />
             ))}
           </motion.div>
