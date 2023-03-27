@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 //INTERNAL IMPORT 
 import Style from "../styles/collection.module.css"
 import images from "../img"
@@ -11,6 +12,7 @@ const collection = () => {
   return (
     <div className={Style.collection}>
       <Banner bannerImage={images.creatorbackground1} />
+      <CollectionProfile />
     </div>
   )
 }
