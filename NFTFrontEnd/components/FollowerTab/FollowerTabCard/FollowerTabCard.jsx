@@ -42,7 +42,7 @@ const FollowerTabCard = ({ i, el }) => {
             alt="profile picture"
             width={50}
             height={50}
-            src={images.user1}
+            src={el}
           />
         </div>
 

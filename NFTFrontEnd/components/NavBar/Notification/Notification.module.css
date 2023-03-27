@@ -62,8 +62,8 @@
 
 @media screen and (max-width: 35em) {
     .notification{
-        width: 20rem;
-        left: -15rem;
+        width: 21rem;
+        left: -11rem;
     }
     .notification_box{
         padding: .3rem;

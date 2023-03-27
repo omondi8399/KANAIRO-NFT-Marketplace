@@ -45,3 +45,9 @@
     color: var(--shadow-dark-color);
     border-radius: .3rem;
 }
+
+@media screen and (max-width: 35em) {
+    .profile{
+        left: -13.5rem;
+    }
+}

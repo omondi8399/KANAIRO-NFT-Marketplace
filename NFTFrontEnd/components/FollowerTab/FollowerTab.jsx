@@ -8,11 +8,35 @@ import {
 //INTERNAL IMPORT
 import Style from "./FollowerTab.module.css";
 import FollowerTabCard from "./FollowerTabCard/FollowerTabCard";
+import images from "../../img"
 
 const FollowerTab = () => {
-  const CardArray = [1, 2, 3, 4, 5, 6, 7, 8];
-  const FollowingArray = [1, 2, 3, 4, 5, 6];
-  const NewsArray = [1, 2, 3, 4, 5];
+  const CardArray = [
+    images.user1, 
+    images.user2, 
+    images.user3, 
+    images.user4, 
+    images.user5, 
+    images.user6, 
+    images.user7, 
+    images.user10];
+
+  const FollowingArray = [
+    images.user6, 
+    images.user7, 
+    images.user10,
+    images.user1, 
+    images.user3, 
+    images.user4
+  ];
+
+  const NewsArray = [
+    images.user2, 
+    images.user3, 
+    images.user4, 
+    images.user5, 
+    images.user6
+  ];
 
   const [popular, setPopular] = useState(true);
   const [following, setFollowing] = useState(false);
