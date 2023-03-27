@@ -7,7 +7,7 @@ import Style from "./SliderCard.module.css";
 import images from "../../../img";
 import LikeProfile from "../../LikeProfile/LikeProfile";
 
-const SliderCard = ({el, i}) => {
+const SliderCard = ({ el, i }) => {
   return (
     <motion.div className={Style.sliderCard}>
       <div className={Style.sliderCard_box}>
