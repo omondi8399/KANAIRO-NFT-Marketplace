@@ -14,7 +14,8 @@ import {
   Collection,
   FollowerTab,
   AudioLive,
-  Slider
+  Slider,
+  Brand
 } from "../components/componentsIndex";
 
 const Home = () => {
@@ -47,6 +48,7 @@ const Home = () => {
       />
       <Category />
       <Subscribe />
+      <Brand />
     </div>
   );
 };
