@@ -1,4 +1,4 @@
 import CollectionProfile from "./collectionProfile/collectionProfile"
 import Banner from "./Banner/Banner"
-
-export { CollectionProfile, Banner }
+import NFTCardTwo from "./NFTCardTwo/NFTCardTwo"
+export { CollectionProfile, Banner, NFTCardTwo }
