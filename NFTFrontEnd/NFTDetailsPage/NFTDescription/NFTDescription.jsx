@@ -246,13 +246,13 @@ const NFTDescription = () => {
 
             <div className={Style.NFTDescription_box_profile_biding_box_button}>
               <Button
-                icon={FaWallet} />
+                icon= <FaWallet />
                 btnName="Place a bid"
                 handleClick={() => {}}
                 classStyle={Style.button}
               />
               <Button
-                icon={FaPercentage} />
+                icon=<FaPercentage />
                 btnName="Make offer"
                 handleClick={() => {}}
                 classStyle={Style.button}
@@ -278,7 +278,7 @@ const NFTDescription = () => {
 
             {owner && (
               <div className={Style.NFTDescription_box_profile_biding_box_card}>
-                <NFTTabs dataTab={ownerArray} icon={MdVerified} />
+                <NFTTabs dataTab={ownerArray} icon=<MdVerified /> />
               </div>
             )}
           </div>
