@@ -1,0 +1,53 @@
+
+
+.contactus{
+    width: 100%;
+}
+
+.contactus_box{
+    width: 60%;
+    margin:  0 auto;
+}
+
+.contactus_box h1{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.contactus_box_box{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+    align-items: center;
+    align-self: flex-start;
+    margin-bottom: 10rem;
+}
+
+.contactus_box_box_left_item p{
+    line-height: 1.2;
+    width: 80%;
+    font-size: 1rem;
+}
+
+.contactus_box_box_left_item a{
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: .3rem;
+}
+
+.button{
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width:35em) {
+    .contactus_box{
+        width: 90%;
+    }
+
+    .contactus_box_box{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
