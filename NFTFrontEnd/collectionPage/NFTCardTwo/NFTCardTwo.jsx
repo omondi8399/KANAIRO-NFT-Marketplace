@@ -11,6 +11,16 @@ import { LikeProfile } from '../../components/componentsIndex'
 const NFTCardTwo = ({ NFTData }) => {
   const [like, setLike] = useState(false)
   const [likeInc, setLikeInc] = useState(21)
+
+  const likeNFT = () => {
+    if (like) {
+      setLike(true)
+      setLikeInc(23)
+    } else {
+      setLike(false)
+      setLikeInc(23 + 1)
+    }
+  }
   return (
     <div className={Style.NFTCardTwo}>
       {
