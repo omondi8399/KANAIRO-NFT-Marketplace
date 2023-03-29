@@ -4,7 +4,7 @@ import Image from "next/image";
 //INTERNALIMPORT
 import Style from "./loginAndSignUp.module.css";
 import images from "../img";
-import { Button } from "../components/componentsindex.js";
+import { Button } from "../components/componentsIndex.js";
 
 const loginAndSignUp = () => {
   const [activeBtn, setActiveBtn] = useState(1);
