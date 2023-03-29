@@ -28,7 +28,7 @@ const FollowerTabCard = ({ i, el }) => {
           <Image
             className={Style.FollowerTabCard_box_img_img}
             src={el.background}
-            alt="profile braground"
+            alt="profile background"
             width={500}
             height={300}
             objectFit="cover"
@@ -48,7 +48,7 @@ const FollowerTabCard = ({ i, el }) => {
         <div className={Style.FollowerTabCard_box_info}>
           <div className={Style.FollowerTabCard_box_info_name}>
             <h4>
-              Henry Kash{""}{" "}
+              Allan Mark{""}{" "}
               <span>
                 <MdVerified />
               </span>

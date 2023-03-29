@@ -6,13 +6,13 @@ import { TiTick } from "react-icons/ti";
 import Image from "next/image";
 
 //INTERNAL IMPORT
-import Style from "./UploadNFT.module.css";
+import Style from "./Upload.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
 import images from "../img";
-import { Button } from "../components/componentsIndex.js";
-import { DropZone } from "../UploadNFT/UploadNFTIndex.js";
+import { Button } from "../components/componentsindex.js";
+import { DropZone } from "../UploadNFT/uploadNFTIndex.js";
 
-const UploadNFT = () => {
+const UloadNFT = () => {
   const [active, setActive] = useState(0);
   const [itemName, setItemName] = useState("");
   const [website, setWebsite] = useState("");
@@ -70,7 +70,7 @@ const UploadNFT = () => {
           <label htmlFor="nft">Item Name</label>
           <input
             type="text"
-            placeholder="shoaib bhai"
+            placeholder="Rodgers Omondi"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setItemName(e.target.value)}
           />
@@ -91,7 +91,7 @@ const UploadNFT = () => {
           </div>
 
           <p className={Style.upload_box_input_para}>
-            Ciscrypt will include a link to this URL on this item's detail page,
+            Naicrypt will include a link to this URL on this item's detail page,
             so that users can click to learn more about it. You are welcome to
             link to your own webpage with more details.
           </p>
@@ -207,4 +207,4 @@ const UploadNFT = () => {
   );
 };
 
-export default UploadNFT;
+export default UloadNFT;

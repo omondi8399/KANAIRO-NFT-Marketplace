@@ -8,92 +8,102 @@ import {
 //INTERNAL IMPORT
 import Style from "./FollowerTab.module.css";
 import FollowerTabCard from "./FollowerTabCard/FollowerTabCard";
-import images from "../../img"
+import images from "../../img";
 
 const FollowerTab = () => {
   const CardArray = [
     {
       background: images.creatorbackground1,
-      user: images.user1
+      user: images.user1,
     },
     {
       background: images.creatorbackground2,
-      user: images.user2
+      user: images.user2,
     },
     {
       background: images.creatorbackground3,
-      user: images.user3
+      user: images.user3,
     },
     {
       background: images.creatorbackground4,
-      user: images.user4
+      user: images.user4,
     },
     {
       background: images.creatorbackground5,
-      user: images.user5
+      user: images.user5,
     },
     {
       background: images.creatorbackground6,
-      user: images.user6
+      user: images.user6,
     },
     {
       background: images.creatorbackground7,
-      user: images.user7
+      user: images.user7,
     },
     {
       background: images.creatorbackground8,
-      user: images.user8
+      user: images.user8,
     },
   ];
-
   const FollowingArray = [
     {
-      background: images.creatorbackground6,
-      user: images.user6
-    },
-    {
-      background: images.creatorbackground7,
-      user: images.user7
-    },
-    {
-      background: images.creatorbackground10,
-      user: images.user10
-    },
-    {
-      background: images.creatorbackground1,
-      user: images.user1
-    },
-    {
       background: images.creatorbackground3,
-      user: images.user3
+      user: images.user3,
     },
     {
       background: images.creatorbackground4,
-      user: images.user4
-    }
-  ];
-
-  const NewsArray = [
-    {
-      background: images.creatorbackground2,
-      user: images.user2
-    },
-    {
-      background: images.creatorbackground3,
-      user: images.user3
-    },
-    {
-      background: images.creatorbackground4,
-      user: images.user4
+      user: images.user4,
     },
     {
       background: images.creatorbackground5,
-      user: images.user5
+      user: images.user5,
     },
     {
       background: images.creatorbackground6,
-      user: images.user6
-    }
+      user: images.user6,
+    },
+    {
+      background: images.creatorbackground1,
+      user: images.user1,
+    },
+    {
+      background: images.creatorbackground2,
+      user: images.user2,
+    },
+  ];
+  const NewsArray = [
+    {
+      background: images.creatorbackground1,
+      user: images.user1,
+    },
+    {
+      background: images.creatorbackground2,
+      user: images.user2,
+    },
+    {
+      background: images.creatorbackground3,
+      user: images.user3,
+    },
+    {
+      background: images.creatorbackground4,
+      user: images.user4,
+    },
+    {
+      background: images.creatorbackground5,
+      user: images.user5,
+    },
+    {
+      background: images.creatorbackground6,
+      user: images.user6,
+    },
+    {
+      background: images.creatorbackground7,
+      user: images.user7,
+    },
+    {
+      background: images.creatorbackground8,
+      user: images.user8,
+    },
   ];
 
   const [popular, setPopular] = useState(true);

@@ -5,35 +5,31 @@ import Style from "../styles/index.module.css";
 import {
   HeroSection,
   Service,
-  BigNFTSlider,
+  BigNFTSilder,
   Subscribe,
   Title,
   Category,
   Filter,
   NFTCard,
   Collection,
-  FollowerTab,
   AudioLive,
+  FollowerTab,
   Slider,
   Brand,
-  Video
-} from "../components/componentsIndex";
+  Video,
+} from "../components/componentsindex";
 
 const Home = () => {
   return (
     <div className={Style.homePage}>
       <HeroSection />
       <Service />
-      <BigNFTSlider />
+      <BigNFTSilder />
       <Title
         heading="Audio Collection"
         paragraph="Discover the most outstanding NFTs in all topics of life."
       />
       <AudioLive />
-      <Title
-        heading="New Collection"
-        paragraph="Discover the most outstanding NFTs in all topics of life."
-      />
       <FollowerTab />
       <Slider />
       <Collection />

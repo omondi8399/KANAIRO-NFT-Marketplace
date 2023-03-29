@@ -1,0 +1,35 @@
+
+.login{
+    width: 100%;
+    margin-block: 5rem;
+}
+
+.login_box{
+    width: 30%;
+    margin: 0 auto;
+}
+
+.login_box h1{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+.login_box_para{
+    text-align: center;
+    line-height: 0;
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+.login_box_para a{
+    font-weight: 500;
+    margin-left: 1rem;
+}
+
+
+@media screen and (max-width: 35em) {
+    .login_box{
+        width: 90%;
+    }
+}

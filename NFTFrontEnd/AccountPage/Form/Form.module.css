@@ -63,6 +63,7 @@
     outline: none;
     border-radius: 1rem;
     padding: 1rem;
+    border: 1px solid var(--icons-color);
 }
 
 .Form_box_input_social{

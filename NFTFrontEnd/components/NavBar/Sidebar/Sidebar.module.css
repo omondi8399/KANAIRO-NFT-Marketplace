@@ -4,6 +4,12 @@
     background-color:  var(--main-bg-color);
 }
 
+.sideBar_box_logo{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
 .sideBar_closeBtn{
     position: absolute;
     top: 3rem;

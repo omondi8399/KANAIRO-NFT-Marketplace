@@ -23,6 +23,11 @@
     align-items:  center;
 }
 
+.logo{
+  color: var(--icons-color);
+  font-size: 4rem;
+}
+
 .navbar_container_left_box_input_box{
     width: 60%;
     border: 1px solid var(--icons-color);

@@ -34,6 +34,10 @@
     border-radius: .3rem;
 }
 
+.notification_box:hover .notification_box_new{
+    background-color: var(--main-bg-color);
+}
+
 .notification_box_img{
     border-radius: 5rem;
 }
@@ -57,7 +61,7 @@
     width: .5rem;
     height: .5rem;
     border-radius: 50%;
-    background-color: aqua;
+    background-color: var(--icons-color);
 }
 
 @media screen and (max-width: 35em) {

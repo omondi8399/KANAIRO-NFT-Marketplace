@@ -34,7 +34,7 @@ const Category = () => {
                 <BsCircleFill />
               </span>
               <div className={Style.category_box_title_info}>
-                <h4>Enterainment</h4>
+                <h4>Entertainment</h4>
                 <small>1995 NFTS</small>
               </div>
             </div>

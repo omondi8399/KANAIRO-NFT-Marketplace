@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //INTERNAL IMPORT
 import Style from "./HeroSection.module.css";
-import { Button } from "../componentsIndex";
+import { Button } from "../componentsindex";
 import images from "../../img";
 
 const HeroSection = () => {
@@ -11,11 +11,10 @@ const HeroSection = () => {
     <div className={Style.heroSection}>
       <div className={Style.heroSection_box}>
         <div className={Style.heroSection_box_left}>
-          <h1>KANAIRO MARKETPLACE </h1>
-          <h2>Discover, collect, and sell NFTs 🖼️</h2>
+          <h1>WELCOME TO KANAIRO  🖼️</h1>
           <p>
             Discover the most outstanding NTFs in all topics of life. Creative
-            your NTFs and sell them
+            your NTFs and sell them.
           </p>
           <Button btnName="Start your search" />
         </div>

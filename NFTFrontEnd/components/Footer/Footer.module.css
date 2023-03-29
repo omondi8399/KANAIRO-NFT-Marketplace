@@ -1,8 +1,13 @@
 
+.footer_box_social_logo{
+    font-size: 5rem;
+}
+
 .footer{
     width: 100%;
     padding-block: 1.5rem;
     position: relative;
+   
 }
 
 .footer_box{
@@ -22,6 +27,7 @@
     font-size: 1.5rem;
     align-items: center;
 }
+
 
 .footer_social a{
     padding: .5rem;

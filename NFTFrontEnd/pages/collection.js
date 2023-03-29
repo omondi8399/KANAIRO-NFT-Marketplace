@@ -8,7 +8,7 @@ import {
   CollectionProfile,
   NFTCardTwo,
 } from "../collectionPage/collectionIndex";
-import { Slider, Brand } from "../components/componentsIndex";
+import { Slider, Brand } from "../components/componentsindex";
 import Filter from "../components/Filter/Filter";
 
 const collection = () => {

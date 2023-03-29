@@ -29,7 +29,7 @@ const connectWallet = () => {
       <div className={Style.connectWallet_box}>
         <h1>Connect your wallet</h1>
         <p className={Style.connectWallet_box_para}>
-          Connect with one of our avaliable wallet providers or create a new one
+          Connect with one of our avaliabl wallet providers or create a new one
         </p>
 
         <div className={Style.connectWallet_box_provider}>

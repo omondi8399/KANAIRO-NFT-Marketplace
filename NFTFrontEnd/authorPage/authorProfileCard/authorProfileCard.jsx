@@ -17,7 +17,7 @@ import { BsThreeDots } from "react-icons/bs";
 //INTERNAL IMPORT
 import Style from "./AuthorProfileCard.module.css";
 import images from "../../img";
-import { Button } from "../../components/componentsIndex";
+import { Button } from "../../components/componentsindex.js";
 
 const AuthorProfileCard = () => {
   const [share, setShare] = useState(false);
@@ -64,7 +64,7 @@ const AuthorProfileCard = () => {
 
         <div className={Style.AuthorProfileCard_box_info}>
           <h2>
-            Dony Herrera{""}{" "}
+            Rodgers Omondi{""}{" "}
             <span>
               <MdVerified />
             </span>{" "}

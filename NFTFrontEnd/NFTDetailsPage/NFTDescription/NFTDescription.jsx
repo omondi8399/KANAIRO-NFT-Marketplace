@@ -111,10 +111,10 @@ const NFTDescription = () => {
             {social && (
               <div className={Style.NFTDescription_box_share_box_social}>
                 <a href="#">
-                  <TiSocialFacebook /> Facebooke
+                  <TiSocialFacebook /> Facebook
                 </a>
                 <a href="#">
-                  <TiSocialInstagram /> Instragram
+                  <TiSocialInstagram /> Instagram
                 </a>
                 <a href="#">
                   <TiSocialLinkedin /> LinkedIn
@@ -142,7 +142,7 @@ const NFTDescription = () => {
                   <BiTransferAlt /> Transfer
                 </a>
                 <a href="#">
-                  <MdReportProblem /> Report abouse
+                  <MdReportProblem /> Report abuse
                 </a>
                 <a href="#">
                   <MdOutlineDeleteSweep /> Delete item
@@ -166,7 +166,7 @@ const NFTDescription = () => {
               <div className={Style.NFTDescription_box_profile_box_left_info}>
                 <small>Creator</small> <br />
                 <span>
-                  Karli Costa <MdVerified />
+                  Sarah Gathoni <MdVerified />
                 </span>
               </div>
             </div>
@@ -183,7 +183,7 @@ const NFTDescription = () => {
               <div className={Style.NFTDescription_box_profile_box_right_info}>
                 <small>Creator</small> <br />
                 <span>
-                  Karli Costa <MdVerified />
+                  Henry Kariuki <MdVerified />
                 </span>
               </div>
             </div>
@@ -246,7 +246,7 @@ const NFTDescription = () => {
 
             <div className={Style.NFTDescription_box_profile_biding_box_button}>
               <Button
-                icon= <FaWallet />
+                icon=<FaWallet />
                 btnName="Place a bid"
                 handleClick={() => {}}
                 classStyle={Style.button}

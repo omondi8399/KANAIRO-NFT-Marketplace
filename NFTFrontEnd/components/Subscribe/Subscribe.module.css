@@ -7,7 +7,7 @@
 .subscribe_box{
     width: 80%;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding:  8rem 0;
 
     display: grid;
     grid-template-columns: 1.5fr 2fr;
@@ -63,7 +63,7 @@
     width: 90%;
 }
 
-.subscribe_box_left_input::placeholder{
+.subscribe_box_left_input input::placeholder{
     color: var(--main-bg-color);
     font-size: 1.2rem;
 }
@@ -82,6 +82,7 @@
         width: 100%;
         padding: 1rem;
     }
+
     .subscribe_box_left h2{
         font-size: 2rem;
     }
@@ -93,10 +94,12 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
     }
+
     .subscribe_box_left_input{
         width: 100%;
         padding: 1rem;
     }
+
     .subscribe_box_left h2{
         font-size: 2rem;
     }
