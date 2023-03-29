@@ -1,5 +1,5 @@
-import AuthorProfileCard from "./AuthorProfileCard/AuthorProfileCard";
-import AuthorTaps from "./AuthorTaps/AuthorTaps";
-import AuthorNFTCardBox from "./AuthorNFTCardBox/AuthorNFTCardBox";
+import AuthorProfileCard from "./authorProfileCard/AuthorProfileCard";
+import AuthorTaps from "./authorTaps/AuthorTaps";
+import AuthorNFTCardBox from "./authorNFTCardBox/AuthorNFTCardBox";
 
 export { AuthorProfileCard, AuthorTaps, AuthorNFTCardBox };

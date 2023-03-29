@@ -3,7 +3,7 @@ import Image from "next/image";
 
 //INTERNAL IMPORT
 import Style from "../styles/aboutus.module.css";
-import { Brand } from "../components/componentsindex";
+import { Brand } from "../components/componentsIndex";
 import images from "../img";
 
 const aboutus = () => {

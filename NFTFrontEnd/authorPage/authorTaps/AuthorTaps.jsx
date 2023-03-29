@@ -3,7 +3,7 @@ import Image from "next/image";
 import { TiArrowSortedDown, TiArrowSortedUp, TiTick } from "react-icons/ti";
 
 //INTERNAL IMPORT
-import Style from "./AuthorTaps.module.css";
+import Style from "./authorTaps.module.css";
 
 const AuthorTaps = ({
   setCollectiables,

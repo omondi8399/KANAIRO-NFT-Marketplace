@@ -3,7 +3,7 @@ import React from "react";
 //INTRNAL IMPORT
 import Style from "../styles/search.module.css";
 import { Slider, Brand } from "../components/componentsIndex";
-import { SearchBar } from "../SearchPage/searchBarIndex";
+import { SearchBar } from "../searchPage/index";
 import { Filter } from "../components/componentsIndex";
 
 import { NFTCardTwo, Banner } from "../collectionPage/collectionIndex";

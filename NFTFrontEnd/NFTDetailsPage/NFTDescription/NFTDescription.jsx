@@ -21,7 +21,8 @@ import { BiTransferAlt, BiDollar } from "react-icons/bi";
 //INTERNAL IMPORT
 import Style from "./NFTDescription.module.css";
 import images from "../../img";
-import { Button } from "../../components/componentsindex.js";
+
+import { Button } from "../../components/componentsIndex.js";
 import { NFTTabs } from "../NFTDetailsIndex";
 
 const NFTDescription = () => {
@@ -246,13 +247,13 @@ const NFTDescription = () => {
 
             <div className={Style.NFTDescription_box_profile_biding_box_button}>
               <Button
-                icon= <FaWallet />
+                // icon= <FaWallet />
                 btnName="Place a bid"
                 handleClick={() => {}}
                 classStyle={Style.button}
               />
               <Button
-                icon=<FaPercentage />
+                // icon=<FaPercentage />
                 btnName="Make offer"
                 handleClick={() => {}}
                 classStyle={Style.button}
