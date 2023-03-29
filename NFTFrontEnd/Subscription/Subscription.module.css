@@ -1,0 +1,53 @@
+
+.SubscriptionBox{
+    border:  1px solid var(--icons-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    transition:  all .3s ease-in;
+    cursor: pointer;
+}
+
+.SubscriptionBox:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.SubscriptionBox_box_span{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.SubscriptionBox_box_small{
+    position: absolute;
+    right: 3rem;
+    font-size: 1.2rem;
+    background-color: var(--icons-color);
+    color: var(--main-bg-color);
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+
+.SubscriptionBox_box_price{
+    font-size: 3rem;
+    line-height: 0;
+    font-weight: 900;
+}
+
+.SubscriptionBox_box_info{
+    margin: 4rem 0;
+}
+
+.SubscriptionBox_box_info_para{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 0;
+}
+
+@media screen and (max-width: 35em) {
+    .SubscriptionBox_box_info_para{
+        font-size: 1rem;
+    }
+}
