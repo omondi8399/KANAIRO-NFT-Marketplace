@@ -2,17 +2,17 @@
 
 KANAIRO is an NFT Marketplace that allows users to sell and  buy arts(NFTs) online.
 
-For listing an NFT, the seler is supposed to:
-- Create a account by connect the mettamask Wallet
-- Pay the listing fee
+For listing an NFT, the seller is supposed to:
+- Create an account by connecting their MetaMask Wallet
+- List the NFT which automatically their listing fee
 
 For buy an NFT, the buyer is supposed:
-- Create a account by connect the mettamask Wallet
-- Pushache the NFT of choice if they have enough funds in their wallet
+- Create an account by connecting their MetaMask Wallet
+- Purschase the NFT of choice if they have enough funds in their wallet
 
 ## For contributions, follow the following steps
-1. Start the project help me grow
-2. Fork the project or Clone the repository
+1. Star the project help me grow
+2. Fork the repository or Clone it by runnig the command below
 ```bash
 git clone https://github.com/omondi8399/KANAIRO-NFT-Marketplace.git
 ```
