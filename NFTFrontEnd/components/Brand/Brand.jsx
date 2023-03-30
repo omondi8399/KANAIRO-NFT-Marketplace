@@ -5,7 +5,7 @@ import { DiJqueryLogo } from "react-icons/di";
 //INTERNAL IMPORT
 import Style from "./Brand.module.css";
 import images from "../../img";
-import { Button } from "../../components/componentsindex.js";
+import { Button } from "../../components/componentsIndex.js";
 
 const Brand = () => {
   return (

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 //INTERNAL IMPORT
 import Style from "../styles/author.module.css";
 import { Banner, NFTCardTwo } from "../collectionPage/collectionIndex";
-import { Brand, Title } from "../components/componentsindex";
+import { Brand, Title } from "../components/componentsIndex";
 import FollowerTabCard from "../components/FollowerTab/FollowerTabCard/FollowerTabCard";
 import images from "../img";
 import {

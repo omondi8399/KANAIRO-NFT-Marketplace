@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 //INTERNAL IMPORT
-import Style from "./HelpCenter.module.css";
+import Style from "./Helpcenter.module.css";
 
 const HelpCenter = () => {
   const helpCenter = [
