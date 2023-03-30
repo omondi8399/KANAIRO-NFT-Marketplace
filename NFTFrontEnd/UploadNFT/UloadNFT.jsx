@@ -9,8 +9,8 @@ import Image from "next/image";
 import Style from "./Upload.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
 import images from "../img";
-import { Button } from "../components/componentsindex.js";
-import { DropZone } from "../UploadNFT/uploadNFTIndex.js";
+import { Button } from "../components/componentsIndex.js";
+import { DropZone } from "../UploadNFT/UploadNFTIndex.js";
 
 const UloadNFT = () => {
   const [active, setActive] = useState(0);
