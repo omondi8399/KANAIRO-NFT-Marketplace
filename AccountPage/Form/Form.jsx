@@ -9,7 +9,7 @@ import {
 
 //INTERNAL IMPORT
 import Style from "./Form.module.css";
-import { Button } from "../../components/componentsindex.js";
+import { Button } from "../../components/componentsIndex.js";
 
 const Form = () => {
   return (

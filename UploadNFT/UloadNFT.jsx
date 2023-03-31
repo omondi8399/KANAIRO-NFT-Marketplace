@@ -10,7 +10,7 @@ import { useRouter } from "next/router";
 import Style from "./Upload.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
 import images from "../img";
-import { Button } from "../components/componentsindex.js";
+import { Button } from "../components/componentsIndex.js";
 import { DropZone } from "../UploadNFT/uploadNFTIndex.js";
 
 const UloadNFT = ({ uploadToIPFS, createNFT }) => {
