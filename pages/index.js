@@ -18,10 +18,10 @@ import {
   Brand,
   Video,
   Loader,
-} from "../components/componentsindex";
+} from "../components/componentsIndex";
 import { getTopCreators } from "../TopCreators/TopCreators";
 
-//IMPORTING CONTRCT DATA
+//IMPORTING CONTRACT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const Home = () => {

@@ -6,7 +6,7 @@ import Image from "next/image";
 //INTERNAL IMPORT
 import Style from "../styles/reSellToken.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
-import { Button } from "../components/componentsindex";
+import { Button } from "../components/componentsIndex";
 
 //IMPORT SMART CONTRACT
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
