@@ -1,0 +1,148 @@
+
+.transfer{
+    width: 100%;
+    margin-block: 2rem;
+}
+
+.transfer_box{
+    width: 80%;
+    margin:  0 auto;
+}
+
+.transfer_box_box{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+}
+.transfer_box h1{
+    font-size: 4rem;
+    line-height: 0;
+}
+
+.transfer_box p{
+    width: 60%;
+}
+
+.transfer_box_box_left{
+    text-align: center;
+    display: grid;
+}
+
+.transfer_box_box_right h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.transfer_box_box_right_info{
+    border: 1px solid var(--icons-color);
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+}
+.transfer_box_box_right_box{
+    width: 90%;
+}
+
+.button{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.transfer_box_h1{
+    margin-top: 10rem;
+}
+
+.transfer_box_history{
+    margin-block: 5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.transfer_box_history_item{
+    border: 1px solid var(--icons-color);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    line-height: 1;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.transfer_box_history_item_info p{
+    width: 100%;
+}
+
+.transfer_box_history_item_info p span{
+    color: var(--icons-color);
+    margin-block: .2rem;
+    margin-right: 1rem;
+}
+
+.transfer_box_box_right_info_mobile{
+    display: none;
+}
+
+.readButton{
+  padding: .5rem 1rem;
+}
+
+.messageBox{
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: var(--main-bg-color);
+    color: var(--icons-color);
+    z-index: 11111111111111;
+}
+
+.messageBox_box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.messageBox_box_para{
+    width: 100%;
+}
+@media screen and (max-width: 35em) {
+    .transfer_box{
+        width: 90%;
+    }
+    .transfer_box_box{
+        grid-template-columns: 1fr;
+    }
+    .transfer_box h1{
+        font-size: 2rem;
+    }
+    
+    .transfer_box p{
+        width: 100%;
+    }
+    .transfer_box_box_right h2{
+        font-size: 1.3rem;
+    }
+
+    .transfer_box_box_right_info{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .transfer_box_box_right_box{
+        width: 100%;
+    }
+
+    .transfer_box_history{
+        grid-template-columns: 1fr;
+    }
+
+    .transfer_box_box_right_info_mobile{
+        display: block;
+    }
+    .transfer_box_box_right_info_deskTop{
+      display: none;
+    }
+    
+}

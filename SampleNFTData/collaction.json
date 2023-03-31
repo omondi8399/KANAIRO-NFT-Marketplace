@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Jungle World",
+    "collection": 1,
+    "collectionBackground": "creatorbackground-1.png",
+    "images": [
+      "creatorbackground-2.png",
+      "creatorbackground-3.png",
+      "creatorbackground-4.png"
+    ],
+    "creator": "Heandy Jone",
+    "totalItems": 23,
+    "grandTotal": 1.5456,
+    "description": "Karafuru is home to 5,555 generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru by Museum of Toys.",
+    "floorPrice": {
+      "name": "Floor Price",
+      "price": "$358689.034",
+      "growthRate": "+12.11%"
+    },
+    "volume": {
+      "name": "Volume",
+      "price": "$58689.034"
+    },
+    "latestPrice": "$8749.083"
+  },
+  {
+    "name": "Virtual World",
+    "collection": 2,
+    "collectionBackground": "creatorbackground-5.png",
+    "images": [
+      "creatorbackground-6.png",
+      "creatorbackground-7.png",
+      "creatorbackground-8.png"
+    ],
+    "creator": " Jone",
+    "totalItems": 233,
+    "grandTotal": 2.5456,
+    "description": "Karafuru is home to 5,555 generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru by Museum of Toys.",
+    "floorPrice": {
+      "name": "Floor Price",
+      "price": "$128689.034",
+      "growthRate": "+11.11%"
+    },
+    "volume": {
+      "name": "Volume",
+      "price": "$48689.034"
+    },
+    "latestPrice": "$2749.083"
+  },
+  {
+    "name": "Virtual World",
+    "collection": 3,
+    "collectionBackground": "creatorbackground-9.png",
+    "images": [
+      "creatorbackground-10.png",
+      "creatorbackground-11.png",
+      "creatorbackground-1.png"
+    ],
+    "creator": " Jone World",
+    "totalItems": 33,
+    "grandTotal": 6.5456,
+    "description": "Karafuru is home to 5,555 generative arts where colors reign supreme. Leave the drab reality and enter the world of Karafuru by Museum of Toys.",
+    "floorPrice": {
+      "name": "Floor Price",
+      "price": "$458689.034",
+      "growthRate": "+41.11%"
+    },
+    "volume": {
+      "name": "Volume",
+      "price": "$68689.034"
+    },
+    "latestPrice": "$9749.083"
+  }
+]

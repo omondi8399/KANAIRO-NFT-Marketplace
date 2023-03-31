@@ -1,0 +1,26 @@
+
+
+.Loader{
+    width: 100%;
+    margin-block: 4rem;
+}
+
+.Loader_box{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Loader_box_img{
+    margin-bottom: 14rem;
+    margin-top: -2rem;
+    animation:  mymove 4s infinite;
+}
+
+@keyframes mymove {
+    50% {transform: rotate(360deg);}
+}
+
+.Loader_box_img_img{
+    border-radius: 50%;
+}

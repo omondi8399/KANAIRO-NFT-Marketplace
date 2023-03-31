@@ -1,0 +1,195 @@
+[
+  {
+    "creatorName": "Dony Herrera",
+    "nftImage": "nft-image-1.png",
+    "userImage": "user-1.png",
+    "accountAddress": "0x829BD824B016326A401d083B33D092293333A830",
+    "creatorId": "1",
+    "intro": "Punk #4786 / An OG Cryptopunk Collector, hoarder of NFTs. Contributing to @ether_cards, an NFT Monetization Platform.",
+    "collectiables": [
+      {
+        "type": "image",
+        "like": 342,
+        "nftImage": "nft-image-2.png",
+        "likeProfile": ["user-1.png", "user-2.png", "user-4.png", "user-3.png"],
+        "nftName": "Ape Monkey",
+        "nftId": 1,
+        "nftPrice": 2.0,
+        "offerTiming": 4
+      },
+      {
+        "type": "image",
+        "like": 342,
+        "nftImage": "nft-image-1.png",
+        "likeProfile": ["user-5.png", "user-6.png", "user-7.png", "user-8.png"],
+        "nftName": "Funny Monkey",
+        "nftId": 2,
+        "nftPrice": 3.0,
+        "offerTiming": 1
+      },
+      {
+        "type": "image",
+        "like": 32,
+        "nftImage": "nft-image-3.png",
+        "likeProfile": [
+          "user-9.png",
+          "user-10.png",
+          "user-1.png",
+          "user-2.png"
+        ],
+        "nftName": "Hey Monkey",
+        "nftId": 3,
+        "nftPrice": 9.0,
+        "offerTiming": 4
+      },
+      {
+        "type": "image",
+        "like": 12,
+        "nftImage": "nft-image-1.png",
+        "likeProfile": ["user-3.png", "user-1.png", "user-4.png", "user-5.png"],
+        "nftName": "Hey Monkey",
+        "nftId": 4,
+        "nftPrice": 3.0,
+        "offerTiming": 14
+      },
+      {
+        "type": "image",
+        "like": 442,
+        "nftImage": "nft-image-3.png",
+        "likeProfile": ["user-6.png", "user-7.png", "user-8.png", "user-9.png"],
+        "nftName": "Kon Monkey",
+        "nftId": 5,
+        "nftPrice": 7.0,
+        "offerTiming": 9
+      }
+    ],
+    "created": [
+      {
+        "type": "image",
+        "nftImage": "nft-image-1.png",
+        "like": 342,
+        "likeProfile": ["user-1.png", "user-2.png", "user-4.png", "user-3.png"],
+        "nftName": "Ape Monkey",
+        "nftId": 1,
+        "nftPrice": 2.0,
+        "offerTiming": 4
+      },
+      {
+        "type": "image",
+        "like": 342,
+        "nftImage": "nft-image-3.png",
+        "likeProfile": ["user-5.png", "user-6.png", "user-7.png", "user-8.png"],
+        "nftName": "Funny Monkey",
+        "nftId": 2,
+        "nftPrice": 3.0,
+        "offerTiming": 1
+      },
+      {
+        "type": "image",
+        "like": 32,
+        "nftImage": "nft-image-2.png",
+        "likeProfile": [
+          "user-9.png",
+          "user-10.png",
+          "user-1.png",
+          "user-2.png"
+        ],
+        "nftName": "Hey Monkey",
+        "nftId": 3,
+        "nftPrice": 9.0,
+        "offerTiming": 4
+      },
+      {
+        "type": "image",
+        "like": 12,
+        "nftImage": "nft-image-2.png",
+        "likeProfile": ["user-3.png", "user-1.png", "user-4.png", "user-5.png"],
+        "nftName": "Hey Monkey",
+        "nftId": 4,
+        "nftPrice": 3.0,
+        "offerTiming": 14
+      },
+      {
+        "type": "image",
+        "like": 442,
+        "nftImage": "nft-image-3.png",
+        "likeProfile": ["user-6.png", "user-7.png", "user-8.png", "user-9.png"],
+        "nftName": "Kon Monkey",
+        "nftId": 5,
+        "nftPrice": 7.0,
+        "offerTiming": 9
+      }
+    ],
+    "liked": [
+      {
+        "type": "image",
+        "nftImage": "nft-image-1.png",
+        "like": 342,
+        "likeProfile": ["user-1.png", "user-2.png", "user-4.png", "user-3.png"],
+        "nftName": "Ape Monkey",
+        "nftId": 1,
+        "nftPrice": 2.0,
+        "offerTiming": 4
+      },
+      {
+        "type": "image",
+        "like": 342,
+        "nftImage": "nft-image-3.png",
+        "likeProfile": ["user-5.png", "user-6.png", "user-7.png", "user-8.png"],
+        "nftName": "Funny Monkey",
+        "nftId": 2,
+        "nftPrice": 3.0,
+        "offerTiming": 1
+      },
+      {
+        "type": "image",
+        "like": 32,
+        "nftImage": "nft-image-2.png",
+        "likeProfile": [
+          "user-9.png",
+          "user-10.png",
+          "user-1.png",
+          "user-2.png"
+        ],
+        "nftName": "Hey Monkey",
+        "nftId": 3,
+        "nftPrice": 9.0,
+        "offerTiming": 4
+      }
+    ],
+    "followers": [
+      {
+        "name": "Jone Sina",
+        "userImage": "user-1.png",
+        "description": " Cryptopunk Collector, hoarder of NFTs. Contributing to @ether_cards, an NFT Monetization Platform",
+        "bool": true
+      },
+      {
+        "name": "Shoaib Sina",
+        "userImage": "user-2.png",
+        "description": "@ether_cards, an NFT Monetization Platform Cryptopunk Collector, hoarder of NFTs. Contributing to",
+        "bool": true
+      }
+    ],
+    "following": [
+      {
+        "name": "Shoaib Sina",
+        "userImage": "user-3.png",
+        "description": " Cryptopunk Collector, hoarder of NFTs. Contributing to @ether_cards, an NFT Monetization Platform",
+        "bool": true
+      },
+      {
+        "name": "Tim Sina",
+        "userImage": "user-5.png",
+        "description": "@ether_cards, an NFT Monetization Platform Cryptopunk Collector, hoarder of NFTs. Contributing to",
+        "bool": true
+      },
+      {
+        "name": "Jim Sina",
+        "userImage": "user-9.png",
+        "description": "@ether_cards, an NFT Monetization Platform Cryptopunk Collector, hoarder of NFTs. Contributing to",
+        "bool": true
+      }
+    ]
+  }
+]
