@@ -6,7 +6,7 @@ import { FaEthereum, FaUserAlt } from "react-icons/fa";
 import Style from "../styles/transferFunds.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
 import images from "../img";
-import { Button, Loader } from "../components/componentsindex";
+import { Button, Loader } from "../components/componentsIndex";
 
 //IMPORT FROM CONTRACT DATA
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
