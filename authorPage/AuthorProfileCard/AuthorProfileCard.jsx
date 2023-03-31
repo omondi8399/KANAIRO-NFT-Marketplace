@@ -17,7 +17,7 @@ import { BsThreeDots } from "react-icons/bs";
 //INTERNAL IMPORT
 import Style from "./AuthorProfileCard.module.css";
 import images from "../../img";
-import { Button } from "../../components/componentsindex.js";
+import { Button } from "../../components/componentsIndex.js";
 
 const AuthorProfileCard = ({ currentAccount }) => {
   const [share, setShare] = useState(false);
