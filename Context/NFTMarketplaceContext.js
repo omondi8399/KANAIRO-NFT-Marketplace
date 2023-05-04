@@ -3,24 +3,6 @@ import Web3Modal from "web3modal";
 import { ethers } from "ethers";
 import { useRouter } from "next/router";
 import axios from "axios";
-import { create as ipfsHttpClient } from "ipfs-http-client";
-
-const projectId = process.env.NEXT_PUBLIC_PROJECT_ID;
-const projectSecretKey = process.env.NEXT_PUBLIC_SECRECT_KEY;
-const auth = `Basic ${Buffer.from(`${projectId}:${projectSecretKey}`).toString(
-  "base64"
-)}`;
-
-const subdomain = process.env.NEXT_PUBLIC_SUBDOMAIN;
-
-const client = ipfsHttpClient({
-  host: "infura-ipfs.io",
-  port: 5001,
-  protocol: "https",
-  headers: {
-    authorization: auth,
-  },
-});
 
 //INTERNAL  IMPORT
 import {
@@ -101,7 +83,7 @@ export const NFTMarketplaceProvider = ({ children }) => {
     checkIfWalletConnected();
   }, []);
 
-  //---CONNET WALLET FUNCTION
+  //---CONNECT WALLET FUNCTION
   const connectWallet = async () => {
     try {
       if (!window.ethereum)
@@ -122,16 +104,22 @@ export const NFTMarketplaceProvider = ({ children }) => {
     }
   };
 
-  //---UPLOAD TO IPFS FUNCTION
+  //---UPLOAD TO API FUNCTION
   const uploadToIPFS = async (file) => {
     try {
-      const added = await client.add({ content: file });
-      const url = `${subdomain}/ipfs/${added.path}`;
-      return url;
+      const URL = "http://localhost:3000/api/v1/nfts"
+
+      axios.get(URL).then((res) => {
+
+        const data = res.data
+        console.log(data) 
+      })
+      
     } catch (error) {
-      setError("Error Uploading to IPFS");
+      setError("Error Uploading to API");
       setOpenError(true);
     }
+
   };
 
   //---CREATENFT FUNCTION
