@@ -1,0 +1,88 @@
+
+.account{
+    width: 100%;
+    margin-block: 6rem;
+}
+
+.account_info{
+    width: 50%;
+    margin:  0 auto;
+    border-bottom: 1px solid var(--shadow-dark-color);
+}
+
+.account_info h1{
+    font-size: 4rem;
+    line-height: .5;
+}
+
+.account_info p{
+    font-size: 1.3rem;
+    width: 80%;
+    line-height: 1.2;
+    padding-bottom: .5rem;
+}
+
+.account_box{
+    width: 50%;
+    margin:  0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-top: 3rem;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.account_box_img{
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.account_box_img_img{
+    border-radius: 50%;
+    
+}
+
+.account_box_img_para{
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 0;
+}
+
+@media screen and (max-width: 35em) {
+    .account_info{
+        width: 90%;
+    }
+    .account_info h1{
+        font-size: 2rem;
+    }
+
+    .account_info p{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .account_box{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .account_info{
+        width: 90%;
+    }
+    .account_info h1{
+        font-size: 2rem;
+    }
+
+    .account_info p{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .account_box{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
