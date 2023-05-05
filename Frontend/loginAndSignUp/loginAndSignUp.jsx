@@ -9,30 +9,43 @@ import { Button } from "../components/componentsindex.js";
 
 const loginAndSignUp = () => {
   const [activeBtn, setActiveBtn] = useState(1);
+  const [name, setName] = useState("")
   const [password, setPassword] = useState("")
+  const [passwordConfirm, setpasswordConfirm] = useState("")
   const [email, setEmail] = useState("")
 
+  console.log("name", name, "Password",password, "Email", email)
+
   const [data, setData] = useState({
+    name: "",
+    email: "",
     password: "",
-    email: ""
+    passwordConfirm: ""
+    
 })
-      console.log(password, email)
+      //http://localhost:3001/api/v1/users/signup
 
 const url = "http://localhost:3001/api/v1/users/signup";
 
 function handleSubmit(e) {
   e.preventDefault();
-  console.log(data);
-  setData({
-      email: data.email,
-      password: data.password   
-  });
+  // console.log(data);
+  // setData({
+  //     name:data.name,
+  //     email: data.email,
+  //     password: data.password,
+  //     passwordConfirm:data.passwordConfirm 
+  // });
   axios.post(url, {
+      name: name,
       email: email,
-      password: password  
+      password: password ,
+      passwordConfirm: passwordConfirm 
 
     }).then( async (res) => {
-      console.lo(res.data)
+      console.log("Response", res )
+    }).catch((error) =>{
+      console.log("Error message:",error)
     })
 
 }
@@ -82,6 +95,12 @@ function handleSubmit(e) {
         <p className={Style.user_box_or}>OR</p>
 
         <div className={Style.user_box_input}>
+        <div className={Style.user_box_input_box}>
+            <label htmlFor="name">Name</label>
+            <input type="name" id="name" value={name} placeholder="Rodgers Omondi"
+            onChange={(e) => setName(e.target.value)} />
+          </div>
+
           <div className={Style.user_box_input_box}>
             <label htmlFor="email">Email address</label>
             <input type="email" id="email" value={email} placeholder="example@emample.com"
@@ -94,13 +113,22 @@ function handleSubmit(e) {
               className={Style.user_box_input_box_label}
             >
               <p>Password</p>
-              <p>
-                <a href="#">Forget password</a>
-              </p>
             </label>
             <input type="password" id="password" value={password} 
             onChange={(e) => setPassword(e.target.value)} />
           </div>
+
+          <div className={Style.user_box_input_box}>
+            <label
+              htmlFor="passwordConfirm"
+              className={Style.user_box_input_box_label}
+            >
+              <p>passwordConfirm</p>
+            </label>
+            <input type="Password" id="passwordConfirm" value={passwordConfirm} 
+            onChange={(e) => setpasswordConfirm(e.target.value)} />
+          </div>
+
         </div>
 
         <button btnName="Continue" classStyle={Style.button} onClick={handleSubmit}/>
