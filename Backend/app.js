@@ -67,16 +67,16 @@ app.use(morgan("dev"))
 app.use(express.static(`${__dirname}/nft-data/img`))
 
 //CUSTOM MIDDLE WARE
-app.use((req, res, next) => {
-    console.log("Hey i am from middleware function")
-    next()
-})
+// app.use((req, res, next) => {
+//     console.log("Hey i am from middleware function")
+//     next()
+// })
 
-app.use((req, res, next) => {
-    req.requestTime = new Date().toISOString()
-    // console.log(req.headers)
-    next()
-})
+// app.use((req, res, next) => {
+//     req.requestTime = new Date().toISOString()
+//     // console.log(req.headers)
+//     next()
+// })
 
 app.use("/api/v1/users", usersRouter)
 app.use("/api/v1/nfts", nftsRouter)
