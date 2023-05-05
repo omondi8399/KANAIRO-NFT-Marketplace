@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
     // photo: {
     //     type: String,
     // },
-     photo: String,
+    //  photo: String,
 
      role: {
         type: String,

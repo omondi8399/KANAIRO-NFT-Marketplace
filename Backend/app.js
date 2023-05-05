@@ -5,6 +5,8 @@ const helmet = require("helmet")
 const mongoSanitize = require("express-mongo-sanitize")
 const xss = require("xss-clean")
 const hpp = require("hpp")
+const bodyParser = require("body-parser");
+const cors = require("cors")
 
 const AppError = require("./Utils/appError")
 const globalErrorHandler = require("./controllers/errorController")
@@ -13,6 +15,16 @@ const usersRouter = require("./routes/usersRoute")
 
 const app = express()
 app.use(express.json({limit: "10kb"}))
+
+app.use(bodyParser.json());
+
+const corsOptions = {
+    origin: '*',
+    credentials: true, //access-control-allow-credentials:true
+    optionSuccessStatus: 200,
+}
+
+app.use(cors(corsOptions))
 
 // DATA SANITIZATION AGAINST NoSQL QUERY INJECTION
 app.use(mongoSanitize())
@@ -55,16 +67,16 @@ app.use(morgan("dev"))
 app.use(express.static(`${__dirname}/nft-data/img`))
 
 //CUSTOM MIDDLE WARE
-app.use((req, res, next) => {
-    console.log("Hey i am from middleware function")
-    next()
-})
+// app.use((req, res, next) => {
+//     console.log("Hey i am from middleware function")
+//     next()
+// })
 
-app.use((req, res, next) => {
-    req.requestTime = new Date().toISOString()
-    // console.log(req.headers)
-    next()
-})
+// app.use((req, res, next) => {
+//     req.requestTime = new Date().toISOString()
+//     // console.log(req.headers)
+//     next()
+// })
 
 app.use("/api/v1/users", usersRouter)
 app.use("/api/v1/nfts", nftsRouter)
