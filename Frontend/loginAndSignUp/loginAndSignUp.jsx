@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import axios from "axios";
 
 //INTERNALIMPORT
 import Style from "./loginAndSignUp.module.css";
@@ -8,6 +9,35 @@ import { Button } from "../components/componentsindex.js";
 
 const loginAndSignUp = () => {
   const [activeBtn, setActiveBtn] = useState(1);
+  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState("")
+
+  const [data, setData] = useState({
+    password: "",
+    email: ""
+})
+      console.log(password, email)
+
+const url = "http://localhost:3001/api/v1/users/signup";
+
+function handleSubmit(e) {
+  e.preventDefault();
+  console.log(data);
+  setData({
+      email: data.email,
+      password: data.password   
+  });
+  axios.post(url, {
+      email: email,
+      password: password  
+
+    }).then( async (res) => {
+      console.lo(res.data)
+    })
+
+}
+
+
 
   const socialImage = [
     {
@@ -24,7 +54,8 @@ const loginAndSignUp = () => {
     },
   ];
   return (
-    <div className={Style.user}>
+    <form onSubmit={(e) => handleSubmit(e)}>
+      <div className={Style.user}>
       <div className={Style.user_box}>
         <div className={Style.user_box_social}>
           {socialImage.map((el, i) => (
@@ -53,7 +84,8 @@ const loginAndSignUp = () => {
         <div className={Style.user_box_input}>
           <div className={Style.user_box_input_box}>
             <label htmlFor="email">Email address</label>
-            <input type="email" placeholder="example@emample.com" />
+            <input type="email" id="email" value={email} placeholder="example@emample.com"
+            onChange={(e) => setEmail(e.target.value)} />
           </div>
 
           <div className={Style.user_box_input_box}>
@@ -66,14 +98,17 @@ const loginAndSignUp = () => {
                 <a href="#">Forget password</a>
               </p>
             </label>
-            <input type="password" />
+            <input type="password" id="password" value={password} 
+            onChange={(e) => setPassword(e.target.value)} />
           </div>
         </div>
 
-        <Button btnName="Continue" classStyle={Style.button} />
+        <button btnName="Continue" classStyle={Style.button} onClick={handleSubmit}/>
       </div>
     </div>
-  );
+
+    </form>
+      );
 };
 
 export default loginAndSignUp;
